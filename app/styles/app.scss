@@ -41,16 +41,20 @@ ul {
 }
 
 .app-title {
-  // padding: $gutter;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
 }
 
 .container {
   max-width: 60rem;
   width: 100%;
   margin: auto;
+  border: 1px solid red;
+  flex-grow: 1;
 }
 
 .app-main {
+  width: 100%;
   background: $app-background;
   display: flex;
   flex-direction: column;
