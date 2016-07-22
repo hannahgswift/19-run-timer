@@ -50,7 +50,9 @@ ul {
 }
 
 .container {
-  max-width: 60rem;
+  border: 1px solid black;
+  padding: $gutter;
+  max-width: 30rem;
   width: 100%;
   margin: auto;
   flex-grow: 1;
@@ -69,7 +71,7 @@ ul {
   color: $title-white;
 }
 
-.input-wrapper {
+.new-run__form {
   display: flex;
   flex-direction: column;
 }
@@ -123,10 +125,13 @@ ul {
   line-height: 10px;
 }
 
-.fa-plus-circle {
-  font-size: 40px;
-  color: $button-green;
+.fa-plus {
+  font-size: 14px;
+  color: $title-white;
   text-align: right;
+  background: $button-green;
+  border-radius: 50%;
+  padding: 1.5rem;
 }
 
 .button-container{
