@@ -15,6 +15,14 @@ export default Ember.Controller.extend({
         },
         method: 'post',
         body: JSON.stringify(data),
+      }).then((res) => res.json())
+        .then((person) => {
+        this.setProperties({
+          'time': '',
+          'date': '',
+          'notes': ''
+        });
+        this.set('model', [...this.model, person]);
       });
     }
   }
