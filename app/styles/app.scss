@@ -1,3 +1,59 @@
+$button-gray: #ddd;
+$button-green: #80cbc4;
+$header-bar-blue: #00bbd3;
+$title-white: #fff;
+$regular-text: rgba(255, 255, 255, 0.6);
+$placeholder-text: rgba(255, 255, 255, 0.4);
+$green-text: #92cbc5;
+$button-text-gray: #1c1c1c;
+$app-background: #282828;
+
+$base-font-size: 16px;
+$base-line-height: 24px;
+
+$project-font: Roboto, sans-serif;
+
+$gutter: 1rem;
+
 body {
-  background: green;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.app {
+  width: 100%;
+  height: 100vh;
+  font-family: $project-font;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-nav {
+  background: $header-bar-blue;
+  color: $title-white;
+  display: flex;
+}
+
+.app-title {
+  // padding: $gutter;
+}
+
+.container {
+  max-width: 60rem;
+  width: 100%;
+  margin: auto;
+}
+
+.app-main {
+  background: $app-background;
+  display: flex;
+  flex-direction: column;
+  color: $regular-text;
+  flex-grow: 1;
 }
