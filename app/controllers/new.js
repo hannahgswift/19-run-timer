@@ -22,7 +22,7 @@ export default Ember.Controller.extend({
           'date': '',
           'notes': ''
         });
-        this.set('model', [...this.model, person]);
+        this.transitionToRoute('index');
       });
     }
   }
