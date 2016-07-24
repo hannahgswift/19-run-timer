@@ -1,3 +1,5 @@
+@import 'buttons';
+
 $button-gray: #ddd;
 $button-green: #80cbc4;
 $header-bar-blue: #00bbd3;
@@ -21,7 +23,9 @@ $gutter: 1rem;
 
 body {
   margin: 0;
-  overflow: auto;
+  font-weight: 100;
+
+  // overflow: auto;
 }
 
 ul {
@@ -34,14 +38,37 @@ a {
   color: $regular-text;
 }
 
-.app {
+.mat {
+  display: flex;
+  justify-content: center;
+  align-content: center;
   width: 100%;
   height: 100vh;
+  background: black;
+  // background: url('http://cdn.shopify.com/s/files/1/0269/7611/products/248_54434c9ede99e_3_1413696670_rustic-table-4.jpeg?v=1444237519') no-repeat center center fixed;
+  //     -webkit-background-size: cover;
+  //     -moz-background-size: cover;
+  //     -o-background-size: cover;
+  //     background-size: cover;
+}
+
+.screen {
+  margin: auto;
+  width: 25rem;
+  height:40rem;
+  border: 0.8rem solid white;
+  border-radius: 1rem;
+}
+
+.app {
+  width: 100%;
+  height: 100%;
   font-family: $project-font;
   font-size: $base-font-size;
   line-height: $base-line-height;
   display: flex;
   flex-direction: column;
+  overflow: auto;
 }
 
 .app-nav {
@@ -53,19 +80,23 @@ a {
 .app-title {
   font-size: $base-font-size;
   line-height: $base-line-height;
+  padding: 0;
+  margin: 0;
+  font-weight: 100;
 }
 
 .container {
-  border: 1px solid black;
   padding: $gutter;
-  max-width: 30rem;
+  max-width: 25rem;
   width: 100%;
+  height: 100%;
   margin: auto;
   flex-grow: 1;
 }
 
 .app-main {
   width: 100%;
+  height: 100%;
   background: $app-background;
   display: flex;
   flex-direction: column;
@@ -93,39 +124,22 @@ a {
   margin-bottom: $gutter;
 }
 
-.button-wrapper {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.cancel-btn {
-  padding: 0.5rem $gutter;
-  color: $app-background;
-  background: $button-gray;
-}
-
-.save-btn {
-  padding: 0.5rem $gutter;
-  color: $app-background;
-  background: $button-green;
-}
-
-.form-btn {
-  width: 5rem;
-}
-
 .page {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 83vh;
+  height: 100%;
+}
+
+.top-wrapper {
+  // overflow: auto;
 }
 
 .runs-list {
   color: $regular-text;
   // flex-direction: column;
   // justify-content: space-between;
+  // overflow: auto;
 }
 
 .runs-list__item {
@@ -133,7 +147,7 @@ a {
   flex-direction: row;
   justify-content: space-between;
   border-bottom: 1px solid $regular-text;
-  line-height: 10px;
+  // line-height: 10px;
 }
 
 .my-run {
@@ -145,53 +159,4 @@ a {
 
 .run-time {
   color: $green-text;
-}
-
-.fa-plus {
-  font-size: 20px;
-  color: $title-white;
-  background: $button-green;
-  border-radius: 50%;
-  padding: 1.2rem;
-}
-
-.fa-angle-left {
-  font-size: 20px;
-  color: $app-background;
-  background: $button-gray;
-  border-radius: 50%;
-  padding: 1.2rem;
-}
-
-.fa-pencil {
-  font-size: 20px;
-  color: $title-white;
-  background: $button-green;
-  border-radius: 50%;
-  padding: 1.2rem;
-}
-
-.button-container {
-  width: 100%;
-  border: 1px solid yellow;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-}
-
-.button-container__b {
-  width: 100%;
-  border: 1px solid yellow;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-button {
-  background: transparent;
-  border: none;
-
-  &:hover {
-    cursor: pointer;
-  }
 }

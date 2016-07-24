@@ -5,7 +5,9 @@
     {{input class="input-field" type="data" placeholder="Race Date" value=date}}
     {{input class="input-field" type="text" placeholder="Race Notes" value=notes}}
     <div class="button-wrapper">
-      <button type="clear" class="cancel-btn form-btn">Cancel</button>
+      {{#link-to "index"}}
+      <button type="button" class="cancel-btn form-btn">Cancel</button>
+      {{/link-to}}
       <button type="submit" class="save-btn form-btn">Save</button>
     </div>
   </form>

@@ -2,7 +2,7 @@ import Ember from 'ember';
 
 export default Ember.Controller.extend({
   actions: {
-    edit() {
+    edit(_id) {
       const data = this.model;
       fetch(`http://tiny-tn.herokuapp.com/collections/runs-hs${data._id}`, {
         headers: {

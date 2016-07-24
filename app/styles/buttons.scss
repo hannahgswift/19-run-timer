@@ -1,0 +1,96 @@
+$button-gray: #ddd;
+$button-green: #80cbc4;
+$header-bar-blue: #00bbd3;
+$title-white: #fff;
+$regular-text: rgba(255, 255, 255, 0.6);
+$placeholder-text: rgba(255, 255, 255, 0.4);
+$green-text: #92cbc5;
+$button-text-gray: #1c1c1c;
+$app-background: #282828;
+$base-font-size: 16px;
+$base-line-height: 24px;
+$project-font: Roboto, sans-serif;
+$gutter: 1rem;
+
+button {
+  background: transparent;
+  border: none;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+// ****** Rectangle Buttons ****** //
+.button-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.cancel-btn {
+  padding: 0.5rem $gutter;
+  color: $app-background;
+  background: $button-gray;
+}
+
+.save-btn {
+  padding: 0.5rem $gutter;
+  color: $app-background;
+  background: $button-green;
+}
+
+.form-btn {
+  width: 5rem;
+}
+
+// ****** Circle Buttons ****** //
+.fa-plus {
+  font-size: 20px;
+  color: $title-white;
+}
+
+.fa-angle-left {
+  font-size: 20px;
+  color: $app-background;
+}
+
+.fa-pencil {
+  font-size: 20px;
+  color: $title-white;
+}
+
+.green-circle {
+  color: $button-green;
+  font-size: 55px;
+  line-height: auto;
+  left: -2.5px;
+}
+
+.gray-circle {
+  color: $button-gray;
+  font-size: 55px;
+  line-height: auto;
+}
+
+.fa-stack {
+  line-height: 0;
+}
+
+// ****** Cirlce Button Container ****** //
+.button-container {
+  width: 100%;
+  border: 1px solid yellow;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.button-container__b {
+  width: 100%;
+  border: 1px solid yellow;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}

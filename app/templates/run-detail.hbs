@@ -13,17 +13,18 @@
 
 
   <div class="button-container__b">
-    <button>
+    <button class="fa-stack fa-lg">
       {{#link-to "index"}}
-        <i class="fa fa-angle-left" aria-hidden="true"></i>
+        <i class="fa fa-circle gray-circle fa-stack-1x"></i>
+        <i class="fa fa-angle-left fa-stack-1x" aria-hidden="true"></i>
       {{/link-to}}
     </button>
-
-    <button>
+    <button class="fa-stack fa-lg">
       {{#link-to "edit" model._id}}
-        <i class="fa fa-pencil" aria-hidden="true"></i>
+        <i class="fa fa-circle green-circle fa-stack-1x"></i>
+        <i class="fa fa-pencil fa-stack-1x" aria-hidden="true"></i>
       {{/link-to}}
     </button>
-
   </div>
+
 </div>

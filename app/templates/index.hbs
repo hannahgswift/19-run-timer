@@ -14,8 +14,11 @@
   </div>
 
   <div class="button-container">
-    <button>
-      {{#link-to "new"}}<i class="fa fa-plus" aria-hidden="true"></i>{{/link-to}}
+    <button class="fa-stack fa-lg">
+      {{#link-to "new"}}
+        <i class="fa fa-circle green-circle fa-stack-1x"></i>
+        <i class="fa fa-plus fa-stack-1x"></i>
+      {{/link-to}}
     </button>
   </div>
 
