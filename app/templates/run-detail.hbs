@@ -1,11 +1,29 @@
 {{outlet}}
+<div class="page">
+  <div class="top-wrapper">
+    <h1 class="page-title">My Run</h1>
+    <li class="my-run">
+      <p>{{model.date}}</p>
+      <p class="run-time">{{model.time}}</p>
+    </li>
+
+    <p>{{model.notes}}</p>
+  </div>
 
 
-<h1>My Run</h1>
-{{model.date}}
-{{model.time}}
-{{model.notes}}
 
-{{#link-to "index"}}
-<button><i class="fa fa-angle-left" aria-hidden="true"></i></button>
-{{/link-to}}
+  <div class="button-container__b">
+    <button>
+      {{#link-to "index"}}
+        <i class="fa fa-angle-left" aria-hidden="true"></i>
+      {{/link-to}}
+    </button>
+
+    <button>
+      {{#link-to "edit" model._id}}
+        <i class="fa fa-pencil" aria-hidden="true"></i>
+      {{/link-to}}
+    </button>
+
+  </div>
+</div>

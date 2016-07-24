@@ -1,16 +1,18 @@
-<div class="runs-page">
-  <div class="list-wrapper">
+<div class="page">
+
+  <div class="top-wrapper">
     {{#each model as |value|}}
         <ul class="runs-list">
           {{#link-to "run-detail" value._id}}
             <li class="runs-list__item">
               <p>{{value.date}}</p>
-              <p>{{value.time}}</p>
+              <p class="run-time">{{value.time}}</p>
             </li>
           {{/link-to}}
         </ul>
     {{/each}}
   </div>
+
   <div class="button-container">
     <button>
       {{#link-to "new"}}<i class="fa fa-plus" aria-hidden="true"></i>{{/link-to}}

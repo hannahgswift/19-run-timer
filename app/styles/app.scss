@@ -21,6 +21,7 @@ $gutter: 1rem;
 
 body {
   margin: 0;
+  overflow: auto;
 }
 
 ul {
@@ -41,7 +42,6 @@ a {
   line-height: $base-line-height;
   display: flex;
   flex-direction: column;
-  overflow: auto;
 }
 
 .app-nav {
@@ -111,7 +111,11 @@ a {
   background: $button-green;
 }
 
-.runs-page {
+.form-btn {
+  width: 5rem;
+}
+
+.page {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -132,16 +136,42 @@ a {
   line-height: 10px;
 }
 
-.fa-plus {
-  font-size: 14px;
-  color: $title-white;
-  text-align: right;
-  background: $button-green;
-  border-radius: 50%;
-  padding: 1.5rem;
+.my-run {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  line-height: 10px;
 }
 
-.button-container{
+.run-time {
+  color: $green-text;
+}
+
+.fa-plus {
+  font-size: 20px;
+  color: $title-white;
+  background: $button-green;
+  border-radius: 50%;
+  padding: 1.2rem;
+}
+
+.fa-angle-left {
+  font-size: 20px;
+  color: $app-background;
+  background: $button-gray;
+  border-radius: 50%;
+  padding: 1.2rem;
+}
+
+.fa-pencil {
+  font-size: 20px;
+  color: $title-white;
+  background: $button-green;
+  border-radius: 50%;
+  padding: 1.2rem;
+}
+
+.button-container {
   width: 100%;
   border: 1px solid yellow;
   display: flex;
@@ -149,7 +179,19 @@ a {
   justify-content: flex-end;
 }
 
+.button-container__b {
+  width: 100%;
+  border: 1px solid yellow;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 button {
   background: transparent;
   border: none;
+
+  &:hover {
+    cursor: pointer;
+  }
 }

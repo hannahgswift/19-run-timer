@@ -1,7 +1,7 @@
 import Ember from 'ember';
 
 export default Ember.Route.extend({
-  model(_id ) {
+  model(_id) {
     console.log(_id);
     // const id = params.id;
     // const { id } = params;

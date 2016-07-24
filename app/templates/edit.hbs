@@ -1,0 +1,21 @@
+<div class="new-run__page">
+  <h1 class="page-title">Edit Run</h1>
+  <form class="new-run__form" {{ action "edit" model._id on="submit"}}>
+
+    {{input class="input-field" type="data" value=model.time placeholder="Run Time"}}
+    {{input class="input-field" type="data" value=model.date placeholder="Run Date"}}
+    {{input class="input-field" type="text" value=model.notes placeholder="Run Notes"}}
+
+    <div class="button-wrapper">
+      {{#link-to 'index'}}
+          <button type="button" class="cancel-btn form-btn">Cancel</button>
+      {{/link-to}}
+
+        <button type="submit" class="save-btn form-btn">Save</button>
+    </div>
+
+  </form>
+
+</div>
+
+{{outlet}}
