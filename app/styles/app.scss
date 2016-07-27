@@ -24,6 +24,7 @@ $gutter: 1rem;
 body {
   margin: 0;
   font-weight: 100;
+  background: black;
 
   // overflow: auto;
 }
@@ -44,7 +45,7 @@ a {
   align-content: center;
   width: 100%;
   height: 100vh;
-  background: black;
+  // background: black;
   // background: url('http://cdn.shopify.com/s/files/1/0269/7611/products/248_54434c9ede99e_3_1413696670_rustic-table-4.jpeg?v=1444237519') no-repeat center center fixed;
   //     -webkit-background-size: cover;
   //     -moz-background-size: cover;

@@ -11,8 +11,10 @@ export default Ember.Controller.extend({
           },
           method: 'PUT',
           body: JSON.stringify(data)
+        }).then(() => {
+
+          this.transitionToRoute('run-detail', _id); // Needs ID??
         });
-        this.transitionToRoute("detail");
     }
   }
 });
