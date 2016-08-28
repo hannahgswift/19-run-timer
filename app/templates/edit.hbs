@@ -4,14 +4,14 @@
 
     {{input class="input-field" type="data" value=model.time placeholder="Run Time"}}
     {{input class="input-field" type="data" value=model.date placeholder="Run Date"}}
-    {{input class="input-field" type="text" value=model.notes placeholder="Run Notes"}}
+    {{textarea rows="4" class="input-field" type="text" value=model.notes placeholder="Run Notes"}}
 
     <div class="button-wrapper">
       {{#link-to 'index'}}
-          <button type="button" class="cancel-btn form-btn">Cancel</button>
+        <button type="button" class="cancel-btn form-btn">Cancel</button>
       {{/link-to}}
 
-        <button type="submit" class="save-btn form-btn">Save</button>
+      <button type="submit" class="save-btn form-btn">Save</button>
     </div>
 
   </form>

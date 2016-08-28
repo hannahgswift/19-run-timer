@@ -9,21 +9,21 @@ export default Ember.Controller.extend({
         notes: this.notes,
       };
       fetch('http://tiny-tn.herokuapp.com/collections/runs-hs', {
-        headers: {
-          'Content-type': 'application/json',
-          'Accept': 'application/json'
-        },
-        method: 'post',
-        body: JSON.stringify(data),
-      }).then((res) => res.json())
+          headers: {
+            'Content-type': 'application/json',
+            'Accept': 'application/json'
+          },
+          method: 'post',
+          body: JSON.stringify(data),
+        }).then((res) => res.json())
         .then((person) => {
-        this.setProperties({
-          'time': '',
-          'date': '',
-          'notes': ''
+          this.setProperties({
+            'time': '',
+            'date': '',
+            'notes': ''
+          });
+          this.transitionToRoute('index');
         });
-        this.transitionToRoute('index');
-      });
     }
   }
 });

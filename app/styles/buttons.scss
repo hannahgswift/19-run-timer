@@ -9,7 +9,6 @@ $button-text-gray: #1c1c1c;
 $app-background: #282828;
 $base-font-size: 16px;
 $base-line-height: 24px;
-$project-font: Roboto, sans-serif;
 $gutter: 1rem;
 
 button {
@@ -42,6 +41,9 @@ button {
 
 .form-btn {
   width: 5rem;
+  font-family: 'Fjalla One', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
 }
 
 // ****** Circle Buttons ****** //
@@ -80,7 +82,6 @@ button {
 // ****** Cirlce Button Container ****** //
 .button-container {
   width: 100%;
-  // border: 1px solid yellow;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
@@ -88,7 +89,6 @@ button {
 
 .button-container__b {
   width: 100%;
-  // border: 1px solid yellow;
   display: flex;
   flex-direction: row;
   justify-content: space-between;

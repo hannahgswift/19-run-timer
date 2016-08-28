@@ -3,10 +3,10 @@
   <form {{action "addRun" on="submit"}} class="new-run__form">
     {{input class="input-field" type="data" placeholder="Run Time" value=time}}
     {{input class="input-field" type="data" placeholder="Race Date" value=date}}
-    {{input class="input-field" type="text" placeholder="Race Notes" value=notes}}
+    {{textarea class="input-field" type="text" placeholder="Race Notes" value=notes}}
     <div class="button-wrapper">
       {{#link-to "index"}}
-      <button type="button" class="cancel-btn form-btn">Cancel</button>
+        <button type="button" class="cancel-btn form-btn">Cancel</button>
       {{/link-to}}
       <button type="submit" class="save-btn form-btn">Save</button>
     </div>

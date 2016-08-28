@@ -13,8 +13,6 @@ $app-background: #282828;
 $base-font-size: 16px;
 $base-line-height: 24px;
 
-$project-font: Roboto, sans-serif;
-
 $gutter: 1rem;
 
 * {
@@ -24,9 +22,6 @@ $gutter: 1rem;
 body {
   margin: 0;
   font-weight: 100;
-  background: black;
-
-  // overflow: auto;
 }
 
 ul {
@@ -41,30 +36,23 @@ a {
 
 .mat {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-content: center;
   width: 100%;
   height: 100vh;
-  // background: black;
-  // background: url('http://cdn.shopify.com/s/files/1/0269/7611/products/248_54434c9ede99e_3_1413696670_rustic-table-4.jpeg?v=1444237519') no-repeat center center fixed;
-  //     -webkit-background-size: cover;
-  //     -moz-background-size: cover;
-  //     -o-background-size: cover;
-  //     background-size: cover;
+  background: black;
 }
 
 .screen {
   margin: auto;
-  width: 25rem;
-  height:40rem;
-  border: 0.8rem solid white;
-  border-radius: 1rem;
+  width: 20rem;
+  height: 35rem;
 }
 
 .app {
   width: 100%;
   height: 100%;
-  font-family: $project-font;
   font-size: $base-font-size;
   line-height: $base-line-height;
   display: flex;
@@ -79,16 +67,21 @@ a {
 }
 
 .app-title {
-  font-size: $base-font-size;
-  line-height: $base-line-height;
+  font-size: 2rem;
+  font-family: 'Fjalla One', sans-serif;
+  text-align: center;
   padding: 0;
   margin: 0;
   font-weight: 100;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $title-white;
 }
 
 .container {
   padding: $gutter;
-  max-width: 25rem;
+  max-width: 20rem;
   width: 100%;
   height: 100%;
   margin: auto;
@@ -108,6 +101,11 @@ a {
 
 .page-title {
   color: $title-white;
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 100;
+  letter-spacing: 0.1rem;
 }
 
 .new-run__form {
@@ -123,6 +121,7 @@ a {
   font-size: $base-font-size;
   line-height: $base-line-height;
   margin-bottom: $gutter;
+  font-family: 'Cantarell', sans-serif;
 }
 
 .page {
@@ -132,15 +131,8 @@ a {
   height: 100%;
 }
 
-.top-wrapper {
-  // overflow: auto;
-}
-
 .runs-list {
   color: $regular-text;
-  // flex-direction: column;
-  // justify-content: space-between;
-  // overflow: auto;
 }
 
 .runs-list__item {
@@ -148,7 +140,8 @@ a {
   flex-direction: row;
   justify-content: space-between;
   border-bottom: 1px solid $regular-text;
-  // line-height: 10px;
+  font-family: 'Cantarell', sans-serif;
+  line-height: 0.8rem;
 }
 
 .my-run {
@@ -156,8 +149,39 @@ a {
   flex-direction: row;
   justify-content: space-between;
   line-height: 10px;
+  font-family: 'Cantarell', sans-serif;
+}
+
+.full-detail {
+  font-family: 'Cantarell', sans-serif;
 }
 
 .run-time {
   color: $green-text;
+}
+
+.footer {
+  width: 100%;
+  background: black;
+  color: white;
+  margin: 0;
+  &__container {
+    width: 70%;
+    margin: 0 auto;
+  }
+  &__content {
+    padding: 1rem 0;
+    margin: 0;
+    font-family: 'Fjalla One', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    a {
+      text-decoration: none;
+      color: $header-bar-blue;
+      &:hover {
+        color: $title-white;
+      }
+    }
+  }
 }
