@@ -1,0 +1,187 @@
+@import 'buttons';
+
+$button-gray: #ddd;
+$button-green: #80cbc4;
+$header-bar-blue: #00bbd3;
+$title-white: #fff;
+$regular-text: rgba(255, 255, 255, 0.6);
+$placeholder-text: rgba(255, 255, 255, 0.4);
+$green-text: #92cbc5;
+$button-text-gray: #1c1c1c;
+$app-background: #282828;
+
+$base-font-size: 16px;
+$base-line-height: 24px;
+
+$gutter: 1rem;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-weight: 100;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+a {
+  text-decoration: none;
+  color: $regular-text;
+}
+
+.mat {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+  height: 100vh;
+  background: black;
+}
+
+.screen {
+  margin: auto;
+  width: 20rem;
+  height: 35rem;
+}
+
+.app {
+  width: 100%;
+  height: 100%;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+}
+
+.app-nav {
+  background: $header-bar-blue;
+  color: $title-white;
+  display: flex;
+}
+
+.app-title {
+  font-size: 2rem;
+  font-family: 'Fjalla One', sans-serif;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  font-weight: 100;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $title-white;
+}
+
+.container {
+  padding: $gutter;
+  max-width: 20rem;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  flex-grow: 1;
+}
+
+.app-main {
+  width: 100%;
+  height: 100%;
+  background: $app-background;
+  display: flex;
+  flex-direction: column;
+  color: $regular-text;
+  flex-grow: 1;
+  overflow: auto;
+}
+
+.page-title {
+  color: $title-white;
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 100;
+  letter-spacing: 0.1rem;
+}
+
+.new-run__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-field {
+  background: transparent;
+  color: $regular-text;
+  border: none;
+  border-bottom: 1px solid $placeholder-text;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+  margin-bottom: $gutter;
+  font-family: 'Cantarell', sans-serif;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.runs-list {
+  color: $regular-text;
+}
+
+.runs-list__item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 1px solid $regular-text;
+  font-family: 'Cantarell', sans-serif;
+  line-height: 0.8rem;
+}
+
+.my-run {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  line-height: 10px;
+  font-family: 'Cantarell', sans-serif;
+}
+
+.full-detail {
+  font-family: 'Cantarell', sans-serif;
+}
+
+.run-time {
+  color: $green-text;
+}
+
+.footer {
+  width: 100%;
+  background: black;
+  color: white;
+  margin: 0;
+  &__container {
+    width: 70%;
+    margin: 0 auto;
+  }
+  &__content {
+    padding: 1rem 0;
+    margin: 0;
+    font-family: 'Fjalla One', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    a {
+      text-decoration: none;
+      color: $header-bar-blue;
+      &:hover {
+        color: $title-white;
+      }
+    }
+  }
+}

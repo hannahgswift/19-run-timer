@@ -1,0 +1,27 @@
+<div class="page">
+
+  <div class="top-wrapper">
+    {{#each model as |value|}}
+      <ul class="runs-list">
+        {{#link-to "run-detail" value._id}}
+          <li class="runs-list__item">
+            <p>{{value.date}}</p>
+            <p class="run-time">{{value.time}}</p>
+          </li>
+        {{/link-to}}
+      </ul>
+    {{/each}}
+  </div>
+
+  <div class="button-container">
+    <button class="fa-stack fa-lg">
+      {{#link-to "new"}}
+        <i class="fa fa-circle green-circle fa-stack-1x"></i>
+        <i class="fa fa-plus fa-stack-1x"></i>
+      {{/link-to}}
+    </button>
+  </div>
+
+</div>
+
+{{outlet}}
